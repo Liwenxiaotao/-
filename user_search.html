@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrapt/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			        </button>
+					<a class="navbar-brand" href="#">Maizi Admin</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li >
+							<a href="index.html"><span class="glyphicon glyphicon-home"></span> &nbsp;后台首页</a>
+						</li>
+						<li class="active">
+							<a href="user_list.html"><span class="glyphicon glyphicon-user"></span> &nbsp;用户管理</a>
+						</li>
+						<li>
+							<a href="content.html"><span class="glyphicon glyphicon-list-alt"></span> &nbsp;内容管理</a>
+						</li>
+						<li>
+							<a href="tag.html"><span class="glyphicon glyphicon-tags"></span> &nbsp;标签管理</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-screenshot"></span> &nbsp;前台首页</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-user"></span> &nbsp;个人主页</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-cog"></span> &nbsp;个人设置</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-heart"></span> &nbsp;我的收藏</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-credit-card"></span> &nbsp;账户中心</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-off"></span>  &nbsp;退出</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<ul class="nav nav-pills nav-stacked">
+					  <li role="presentation" ><a href="user_list.html">用户管理</a></li>
+					  <li role="presentation" class="active"><a href="#">用户搜索</a></li>
+					  <li role="presentation"><a href="add_user.html" data-toggle="modal" data-target="#myModal">添加用户</a></li>
+					</ul>
+				</div>
+				<div class="col-md-10">
+					<div class="page-header">
+					  <h1>用户搜索</h1>
+					</div>
+					<ul class="nav nav-tabs">
+					  <li role="presentation" class="active"><a href="#">用户搜索</a></li>
+					  <!--<li role="presentation"><a href="#">Profile</a></li>
+					  <li role="presentation"><a href="#">Messages</a></li>-->
+					</ul>
+					<form action="" class="search-form">
+						<div class="alert alert-info" role="alert">
+							<strong>技巧提示：</strong>支持模糊搜索和匹配搜索，匹配搜索使用*代替！
+						</div>
+						  <div class="form-group">
+						    <label for="user-name">用户名</label>
+						    <input type="text" class="form-control" id="user-name" placeholder="请输入用户名">
+						  </div>
+						  <div class="form-group">
+						  	<label for="uid">UID</label>
+						  	<input type="text" class="form-control" id="uid"/ placeholder="请输入UID">
+						  </div>
+						  <div class="form-group">
+						  	<label for="user-group">选择用户组</label>
+						  	<select name="" id="user-group" class="form-control">
+						  		<option value="">限制会员</option>
+						  		<option value="">新手上路</option>
+						  		<option value="">注册会员</option>
+						  		<option value="">中级会员</option>
+						  		<option value="">高级会员</option>
+						  	</select>
+						  </div>
+					</form>
+				</div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+			      </div>
+			      <div class="modal-body">
+			        	<form action="" >
+						
+						  <div class="form-group">
+						    <label for="user-name">用户名</label>
+						    <input type="text" class="form-control" id="user-name" placeholder="请输入用户名">
+						  </div>
+						  <div class="form-group">
+						  	<label for="password">密码</label>
+						  	<input type="password" class="form-control" id="password"/ placeholder="请输入密码">
+						  </div>
+						   <div class="form-group">
+						  	<label for="password2">确认密码</label>
+						  	<input type="password" class="form-control" id="password2"/ placeholder="请输入确认密码">
+						  </div>
+						   <div class="form-group">
+						  	<label for="mail">邮箱</label>
+						  	<input type="email" class="form-control" id="mail"/ placeholder="请输入邮箱">
+						  </div>
+						  <div class="form-group">
+						  	<label for="user-group">选择用户组</label>
+						  	<select name="" id="user-group" class="form-control">
+						  		<option value="">限制会员</option>
+						  		<option value="">新手上路</option>
+						  		<option value="">注册会员</option>
+						  		<option value="">中级会员</option>
+						  		<option value="">高级会员</option>
+						  	</select>
+						  </div>
+					</form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			        <button type="button" class="btn btn-primary">添加</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<footer>
+			Copyright © 2012-2015 www.maiziedu.com 蜀ICP备13014270号-4
+		</footer>
+		<script src="bootstrapt/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrapt/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

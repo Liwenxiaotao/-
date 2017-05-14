@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrapt/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			        </button>
+					<a class="navbar-brand" href="#">Maizi Admin</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li >
+							<a href="index.html"><span class="glyphicon glyphicon-home"></span> &nbsp;后台首页</a>
+						</li>
+						<li>
+							<a href="user_list.html"><span class="glyphicon glyphicon-user"></span> &nbsp;用户管理</a>
+						</li>
+						<li>
+							<a href="content.html"><span class="glyphicon glyphicon-list-alt"></span> &nbsp;内容管理</a>
+						</li>
+						<li class="active">
+							<a href="tag.html"><span class="glyphicon glyphicon-tags"></span> &nbsp;标签管理</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-screenshot"></span> &nbsp;前台首页</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-user"></span> &nbsp;个人主页</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-cog"></span> &nbsp;个人设置</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-heart"></span> &nbsp;我的收藏</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-credit-card"></span> &nbsp;账户中心</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-off"></span>  &nbsp;退出</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h1>标签管理</h1>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="请输入要添加的标签"/>
+					</div>
+					<div class="tag">
+						<div class="alert alert-info  pull-left" role="alert">
+						  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						  <strong>bootstrap</strong> 
+						</div>
+						<div class="alert alert-info  pull-left" role="alert">
+						  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						  <strong>HTML5</strong> 
+						</div>
+						<div class="alert alert-info  pull-left" role="alert">
+						  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						  <strong>前端开发</strong> 
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-mg-2">
+					<button class="btn btn-default">
+						添加
+					</button>
+				</div>
+				
+			</div>
+		</div>
+		<footer>
+			Copyright © 2012-2015 www.maiziedu.com 蜀ICP备13014270号-4
+		</footer>
+		<script src="bootstrapt/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrapt/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
